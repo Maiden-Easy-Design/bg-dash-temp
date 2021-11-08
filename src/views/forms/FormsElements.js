@@ -1,39 +1,40 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
-import { Row, Col, Card, Form, Button, InputGroup, FormControl, DropdownButton, Dropdown } from 'react-bootstrap';
+import { Row, Col, Card, Form, Button } from 'react-bootstrap'; //, InputGroup, FormControl, DropdownButton, Dropdown
 
 const FormsElements = () => {
-    const [validated, setValidated] = useState(false);
-    const [validatedTooltip, setValidatedTooltip] = useState(false);
-    const [supportedCheckbox, setSupportedCheckbox] = useState(false);
-    const [supportedRadio, setSupportedRadio] = useState(false);
-    const [supportedSelect, setSupportedSelect] = useState(0);
-    const [supportedFile, setSupportedFile] = useState(0);
+    // const [validated, setValidated] = useState(false);
+    // const [validatedTooltip, setValidatedTooltip] = useState(false);
+    // const [supportedCheckbox, setSupportedCheckbox] = useState(false);
+    // const [supportedRadio, setSupportedRadio] = useState(false);
+    // const [supportedSelect, setSupportedSelect] = useState(0);
+    // const [supportedFile, setSupportedFile] = useState(0);
 
-    const handleSubmit = (event) => {
-        const form = event.currentTarget;
-        if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-        }
-        setValidated(true);
-    };
+    // const handleSubmit = (event) => {
+    //     const form = event.currentTarget;
+    //     if (form.checkValidity() === false) {
+    //         event.preventDefault();
+    //         event.stopPropagation();
+    //     }
+    //     setValidated(true);
+    // };
 
-    const handleSubmitTooltip = (event) => {
-        const form = event.currentTarget;
-        if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-        }
-        setValidatedTooltip(true);
-    };
+    // const handleSubmitTooltip = (event) => {
+    //     const form = event.currentTarget;
+    //     if (form.checkValidity() === false) {
+    //         event.preventDefault();
+    //         event.stopPropagation();
+    //     }
+    //     setValidatedTooltip(true);
+    // };
 
-    const supportedSelectHandler = (event) => {
-        setSupportedSelect(parseInt(event.target.value));
-    };
+    // const supportedSelectHandler = (event) => {
+    //     setSupportedSelect(parseInt(event.target.value));
+    // };
 
-    const supportedFileHandler = (event) => {
-        setSupportedFile(!!event.target.value);
-    };
+    // const supportedFileHandler = (event) => {
+    //     setSupportedFile(!!event.target.value);
+    // };
 
     return (
         <React.Fragment>
@@ -41,7 +42,7 @@ const FormsElements = () => {
                 <Col sm={12}>
                     <Card>
                         <Card.Header>
-                            <Card.Title as="h5">Form controls</Card.Title>
+                            <Card.Title as="h5">Custom Reports</Card.Title>
                         </Card.Header>
                         <Card.Body>
                             <Row>
@@ -87,7 +88,7 @@ const FormsElements = () => {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col sm={12}>
+                {/* <Col sm={12}>
                     <Card>
                         <Card.Header>
                             <Card.Title as="h5">Sizing</Card.Title>
@@ -583,7 +584,7 @@ const FormsElements = () => {
                             </Form>
                         </Card.Body>
                     </Card>
-                </Col>
+                </Col> 
                 <Col sm={12}>
                     <Card>
                         <Card.Header>
@@ -1045,7 +1046,7 @@ const FormsElements = () => {
                             </Row>
                         </Card.Body>
                     </Card>
-                </Col>
+                </Col>*/}
             </Row>
         </React.Fragment>
     );

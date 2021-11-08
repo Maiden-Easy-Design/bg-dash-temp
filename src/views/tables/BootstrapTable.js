@@ -6,7 +6,7 @@ const BootstrapTable = () => {
         <React.Fragment>
             <Row>
                 <Col>
-                    <Card>
+                    {/* <Card>
                         <Card.Header>
                             <Card.Title as="h5">Basic Table</Card.Title>
                             <span className="d-block m-t-5">
@@ -45,10 +45,10 @@ const BootstrapTable = () => {
                                 </tbody>
                             </Table>
                         </Card.Body>
-                    </Card>
+                    </Card> */}
                     <Card>
                         <Card.Header>
-                            <Card.Title as="h5">Hover Table</Card.Title>
+                            <Card.Title as="h5">Sensor Data</Card.Title>
                             <span className="d-block m-t-5">
                                 use props <code>hover</code> with <code>Table</code> component
                             </span>
@@ -86,7 +86,7 @@ const BootstrapTable = () => {
                             </Table>
                         </Card.Body>
                     </Card>
-                    <Card>
+                    {/* <Card>
                         <Card.Header>
                             <Card.Title as="h5">Dark Table</Card.Title>
                             <span className="d-block m-t-5">
@@ -549,7 +549,7 @@ const BootstrapTable = () => {
                                 </tbody>
                             </Table>
                         </Card.Body>
-                    </Card>
+                    </Card> */}
                 </Col>
             </Row>
         </React.Fragment>
